@@ -65736,13 +65736,12 @@ module.exports={
   "main": "dist/aframe-master.js",
   "scripts": {
     "browserify": "browserify src/index.js -s 'AFRAME' -p browserify-derequire",
-    "build": "shx mkdir -p build/ && npm run browserify -- --debug -t [ envify --INSPECTOR_VERSION dev ] -o build/aframe.js",
+    "build": "shx mkdir -p build/ && npm run browserify -- --debug -t [envify --INSPECTOR_VERSION dev] -o build/aframe.js",
     "codecov": "codecov",
-    "watch": "chokidar \"src/**/*.js\" -c \"npm run dist:max\"",
     "dev": "npm run build && cross-env INSPECTOR_VERSION=dev node ./scripts/budo -t envify",
     "dist": "node scripts/updateVersionLog.js && npm run dist:min && npm run dist:max",
     "dist:max": "npm run browserify -s -- --debug | exorcist dist/aframe-master.js.map > dist/aframe-master.js",
-    "dist:min": "npm run browserify -s -- --debug -p [ minifyify --map aframe-master.min.js.map --output dist/aframe-master.min.js.map ] -o dist/aframe-master.min.js",
+    "dist:min": "npm run browserify -s -- --debug -p [minifyify --map aframe-master.min.js.map --output dist/aframe-master.min.js.map] -o dist/aframe-master.min.js",
     "docs": "markserv --dir docs --port 9001",
     "preghpages": "node ./scripts/preghpages.js",
     "ghpages": "ghpages -p gh-pages/",
@@ -65774,7 +65773,6 @@ module.exports={
     "deep-assign": "^2.0.0",
     "document-register-element": "dmarcos/document-register-element#8ccc532b7f3744be954574caf3072a5fd260ca90",
     "load-bmfont": "^1.2.3",
-    "lodash": "^4.17.15",
     "object-assign": "^4.0.1",
     "present": "0.0.6",
     "promise-polyfill": "^3.1.0",
@@ -80516,14 +80514,14 @@ if (!window.cordova) {
       'This HTML file is currently being served via the file:// protocol. ' +
       'Assets, textures, and models WILL NOT WORK due to cross-origin policy! ' +
       'Please use a local or hosted server: ' +
-      'https://aframe.io/docs/1.0.0/introduction/installation.html#use-a-local-server.');
+      'https://aframe.io/docs/' + pkg.version + '/introduction/installation.html#use-a-local-server.');
   }
 }
 
 _dereq_('present'); // Polyfill `performance.now()`.
 
 // CSS.
-if (utils.device.isBrowserEnvironment) {
+if (utils.device.isBrowserEnvironment || window.cordova) {
   _dereq_('./style/aframe.css');
   _dereq_('./style/rStats.css');
 }

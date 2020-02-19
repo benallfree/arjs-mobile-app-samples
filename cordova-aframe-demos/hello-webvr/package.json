@@ -5,7 +5,7 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "watch": "chokidar \"./src/**/*.js\" \"./node_modules/aframe/dist/aframe-master.*\" \"./node_modules/ar.js/aframe/build/aframe-ar.*\" \"./src/**/*.js\" -c \"npm run rollup\"",
+    "watch": "chokidar \"./src/**/*.js\" \"./www/index.html\" \"./www/css/*.css\" \"./node_modules/aframe/dist/aframe-master.*\" \"./node_modules/ar.js/aframe/build/aframe-ar.*\"  -c \"npm run rollup && cordova prepare\"",
     "rollup": "rollup -c"
   },
   "keywords": [
