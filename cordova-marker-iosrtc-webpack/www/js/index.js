@@ -12,6 +12,8 @@
       script.src = "./js/adapter-latest.js";
       script.async = false;
       document.getElementsByTagName("head")[0].appendChild(script);
+
+      // Load A-Frame
       document.write(document.getElementById("aframe").innerHTML);
     }
   });
