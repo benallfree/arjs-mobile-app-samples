@@ -1,6 +1,6 @@
-# Cordova + A-Frame + Rollup
+# Cordova + A-Frame
 
-This demo shows various A-Frame demos working in Cordova.
+Various A-Frame demos working in Cordova.
 
 ## Working Demos
 
