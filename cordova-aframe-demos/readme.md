@@ -1,6 +1,10 @@
 # Cordova + A-Frame + Rollup
 
-This demo shows the A-Frame "Hello WebVR" demo working in Cordova.
+This demo shows various A-Frame demos working in Cordova.
+
+## Working Demos
+
+- Hello WebVR
 
 Status: Working, requires A-Frame build from https://github.com/aframevr/aframe/pull/4452
 
