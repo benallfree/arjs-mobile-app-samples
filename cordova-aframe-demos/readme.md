@@ -1,4 +1,4 @@
-# Cordova + AR.js Marker Mode + iosrtc polyfill
+# Cordova + AR.js Marker Mode + iosrtc polyfill + Webpack + Forked packages
 
 This demo shows AR.js Marker Mode in a Cordova-based app using iosrtc polyfills.
 
