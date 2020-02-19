@@ -1,5 +1,5 @@
-(function () {
-  'use strict';
+(function() {
+  "use strict";
 
   document.addEventListener("deviceready", function() {
     // Just for iOS devices.
@@ -15,6 +15,5 @@
       document.write(document.getElementById("aframe").innerHTML);
     }
   });
-
-}());
+})();
 //# sourceMappingURL=index.js.map

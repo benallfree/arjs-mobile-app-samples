@@ -48,13 +48,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>This Application uses your camera to make video calls.</string>
-	<key>NSContactsUsageDescription</key>
-	<string>This Application needs access to your contacts in order to be able to call them.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This Application uses your microphone to make calls.</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>This Application uses your wireless headphones and microphone to make calls.</string>
 </dict>
 </plist>
