@@ -4,9 +4,9 @@ This demo shows various A-Frame demos working in Cordova.
 
 ## Working Demos
 
-- Hello WebVR
+(Note: requires A-Frame build from https://github.com/aframevr/aframe/pull/4452)
 
-Status: Working, requires A-Frame build from https://github.com/aframevr/aframe/pull/4452
+- Hello WebVR
 
 ## Notes
 
