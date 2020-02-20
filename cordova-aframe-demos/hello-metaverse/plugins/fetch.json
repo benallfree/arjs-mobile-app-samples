@@ -22,5 +22,21 @@
     },
     "is_top_level": false,
     "variables": {}
+  },
+  "cordova-plugin-xhr-local-file": {
+    "source": {
+      "type": "local",
+      "path": "/Volumes/Data/repos/phase/arjs-starter/cordova-aframe-demos/hello-metaverse/node_modules/cordova-plugin-xhr-local-file"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-file": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-file"
+    },
+    "is_top_level": false,
+    "variables": {}
   }
 }

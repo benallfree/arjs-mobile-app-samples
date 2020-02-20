@@ -15,7 +15,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "aframe": "^1.0.4",
-    "cordova-ios": "^5.1.1"
+    "cordova-ios": "^5.1.1",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-xhr-local-file": "file:../../../cordova-plugin-xhr-local-file"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.1.1",
@@ -29,7 +31,8 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-xhr-local-file": {}
     },
     "platforms": [
       "ios"
