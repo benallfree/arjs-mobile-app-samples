@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com https://aframe.io 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <title>A-Frame Demos</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <script id="aframe_init" type="text/html">
+
+      <a-scene renderer="antialias: true" background="color: #FAFAFA">
+        <a-box
+          position="-1 0.5 -3"
+          rotation="0 45 0"
+          color="#4CC3D9"
+          shadow
+        ></a-box>
+        <a-sphere
+          position="0 1.25 -5"
+          radius="1.25"
+          color="#EF2D5E"
+          shadow
+        ></a-sphere>
+        <a-cylinder
+          position="1 0.75 -3"
+          radius="0.5"
+          height="1.5"
+          color="#FFC65D"
+          shadow
+        ></a-cylinder>
+        <a-plane
+          position="0 0 -4"
+          rotation="-90 0 0"
+          width="4"
+          height="4"
+          color="#7BC8A4"
+          shadow
+        ></a-plane>
+      </a-scene>
+    </script>
+  </head>
+  <body style="margin : 0px; overflow: hidden;">
+    <button>Close Demo</button>
+    <div class="cordova-aframe-root" id="aframe_root"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="./js/aframe-master.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
