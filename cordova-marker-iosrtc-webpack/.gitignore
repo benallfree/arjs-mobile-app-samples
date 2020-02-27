@@ -62,3 +62,8 @@ node_modules/
 buck-out/
 \.buckd/
 *.keystore
+
+node_modules
+.DS_Store
+platforms
+plugins
